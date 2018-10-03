@@ -15,7 +15,7 @@ function movie() {
   if (movieName === "") {
     movieName = "Friday";
   }
-  let queryUrl = "http://www.omdbapi.com/?t=" + movieName + "&y=&tomatoes=true&plot=short&apikey=trilogy";
+  let queryUrl = "http://www.omdbapi.com/?i=" + movieName + "tt3896198&apikey=4ac5d31e";
   request(queryUrl, function(error, response, body) {
     console.log(queryUrl);
   if (!error && response.statusCode === 200) {
